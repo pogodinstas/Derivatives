@@ -9,7 +9,7 @@ class SNPValue:
     def __init__(self, calculation_date):
         self.calculation_date = calculation_date
         self.snp = float(
-                Quandl.get('YAHOO/INDEX_GSPC.6', rows=10, authtoken='H-hALWWAUR5M3AtEpU-s').loc[self.calculation_date])
+                Quandl.get('YAHOO/INDEX_GSPC.6', rows=10, authtoken='***').loc[self.calculation_date])
 
     def get_snp(self):
         return self.snp
